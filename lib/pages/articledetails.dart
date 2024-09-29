@@ -50,17 +50,17 @@ class ArticleDetailPage extends StatelessWidget {
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
                const SizedBox(height: 20.0),
-              ElevatedButton(
-                onPressed: () async {
-                  Uri url = Uri.parse(article.url!);
-                  if (await canLaunchUrl(url)) {
-                    await launchUrl(url);
-                  } else {
-                    throw 'Could not launch ${article.url}';
-                  }
-                },
-                child: const Text("Read Full Article"),
-              ),
+              // ElevatedButton(
+              //   onPressed: () async {
+              //     Uri url = Uri.parse(article.url!);
+              //     if (await canLaunchUrl(url)) {
+              //       await launchUrl(url);
+              //     } else {
+              //       throw 'Could not launch ${article.url}';
+              //     }
+              //   },
+              //   child: const Text("Read Full Article"),
+              // ),
             ],
           ),
         ),
