@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _getNews() async {
     final response = await dio.get(
-      'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${NEWS_API_KEY}',
+      'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=$NEWS_API_KEY',
     );
     final articlesJson = response.data["articles"] as List;
     setState(() {
